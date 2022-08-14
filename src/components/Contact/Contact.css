@@ -1,0 +1,133 @@
+.main-container-contact {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.container {
+  padding: 6.8rem 0rem 3.4rem;
+  max-width: 130.2rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container-last {
+  background-color: rgba(5, 5, 170, 0.712);
+}
+
+.section-heading {
+  color: #fff;
+  text-align: center;
+  font-size: 6.4rem;
+  padding: 6.4rem 0 6.4rem 0;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  gap: 11.6rem;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  color: #eee;
+}
+
+.main {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  width: 129rem;
+  justify-content: center;
+}
+
+.lst-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* grid-template-rows: 1fr 1fr; */
+  column-gap: 0.8rem;
+  row-gap: 0.8rem;
+}
+
+input:not(.last-button) {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #eee;
+  border-bottom: 2px solid whitesmoke;
+  width: 43rem;
+  margin-top: 4.8rem;
+  margin-bottom: 2.4rem;
+}
+
+input:not(.last-button):focus {
+  border-bottom: 2px solid red;
+  outline: none;
+}
+
+input:not(.last-button)::placeholder {
+  font-family: inherit;
+  color: #eee;
+}
+
+.input3 {
+  grid-column: 1/-1;
+}
+
+textarea {
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  -moz-appearance: none;
+  color: #eee;
+  border: none;
+  outline: none;
+  resize: none;
+  border-bottom: 2px solid whitesmoke;
+  width: 87rem;
+}
+
+textarea:focus {
+  outline: none;
+  border-bottom: 2px solid red;
+}
+
+.input4 {
+  grid-column: 1/-1;
+}
+
+.last-button {
+  margin-top: 4.2rem;
+  width: 87rem;
+  color: #eee;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  padding: 1.2rem 2.4rem 1.2rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.last-button:hover {
+  background-color: #fff;
+  color: rgba(5, 5, 170, 0.712);
+}
+
+.last-icons {
+  color: white;
+  margin-top: 9.6rem;
+  font-size: 4.2rem;
+  gap: 4.2rem;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 9.6rem;
+  justify-content: center;
+}
