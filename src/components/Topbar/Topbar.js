@@ -6,7 +6,7 @@ import { useState } from "react";
 
 function Topbar() {
   // const navigate = useNavigate();
-  let list = [
+  const list = [
     { name: "Home", link: "home" },
     { name: "About", link: "about" },
     { name: "Services", link: "services" },
