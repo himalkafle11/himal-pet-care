@@ -1,7 +1,11 @@
 import React from "react";
 import "./Topbar.css";
+import ModalLog from "../Modal/ModalLog";
+// import {useNavigate} from 'react-router-dom';
+import { useState } from "react";
 
 function Topbar() {
+  // const navigate = useNavigate();
   let list = [
     { name: "Home", link: "home" },
     { name: "About", link: "about" },
@@ -9,6 +13,18 @@ function Topbar() {
     { name: "Members", link: "members" },
     { name: "Contacts", link: "contact" },
   ];
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const toggleModal = () => {
+    setModalOpen(!modalOpen);
+  }
+
+  if(modalOpen) {
+    document.body.classList.add('active-modal')
+  } else {
+    document.body.classList.remove('active-modal')
+  }
+
   return (
     <header>
       <nav className="main-nav">
@@ -25,10 +41,13 @@ function Topbar() {
               </a>
             </li>
           ))}
-          <a href="#" className="main-nav-link  nav-profile ">
+          <button 
+            onClick={toggleModal}
+           href="#" className="main-nav-link  nav-profile ">
             <ion-icon name="person-circle-outline" className="nav-icon"></ion-icon>
             Log In
-          </a>
+          </button>
+          {modalOpen && <ModalLog setOpenModal={setModalOpen} />}
         </ul>
       </nav>
     </header>

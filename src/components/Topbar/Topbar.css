@@ -56,3 +56,7 @@ header {
   background-color: rgba(116, 116, 236, 0.712);
   color: #fff;
 }
+
+body.active-modal {
+  overflow-y: hidden;
+}
