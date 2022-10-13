@@ -11,13 +11,13 @@ function Topbar() {
   ];
   return (
     <header>
-      <nav class="main-nav">
+      <nav className="main-nav">
         <img
           src={require("../../assets/photos/pets/logo.webp")}
           alt="logo"
-          class="logo"
+          className="logo"
         />
-        <ul class="main-nav-list">
+        <ul className="main-nav-list">
           {list.map((item) => (
             <li>
               <a class="main-nav-link" href={`#${item.link}`}>
@@ -25,8 +25,8 @@ function Topbar() {
               </a>
             </li>
           ))}
-          <a href="#" class="main-nav-link  nav-profile ">
-            <ion-icon name="person-circle-outline" class="nav-icon"></ion-icon>
+          <a href="#" className="main-nav-link  nav-profile ">
+            <ion-icon name="person-circle-outline" className="nav-icon"></ion-icon>
             Log In
           </a>
         </ul>

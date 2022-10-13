@@ -4,61 +4,61 @@ import "./Testimonial.css";
 
 function Testimonial() {
   return (
-    <section class="main-container2">
-      <h1 class="primary-heading">What Pet Owners Say</h1>
-      <div class="testimonial container">
-        <div class="testimonial-one">
-          <div class="testimonial-img-quote">
+    <section className="main-container2">
+      <h1 className="primary-heading">What Pet Owners Say</h1>
+      <div className="testimonial container">
+        <div className="testimonial-one">
+          <div className="testimonial-img-quote">
             <img
               src={require("../../assets/photos/testimonials/three.jpg")}
               alt="client"
-              class="testimonial-img"
+              className="testimonial-img"
             />
             <blockquote>"Very Professional"</blockquote>
           </div>
-          <p class="testimonial-text">
+          <p className="testimonial-text">
             "Lorem ipsum dolor sit amet consectetur <br />
             adipisicing elit. Quasi eius doloremque,
             <br /> eveniet tempore sint aliquid
             <br /> beatae distinctio iste voluptas nam."
           </p>
-          <p class="testimonial-name">- Ram Hari Shah</p>
+          <p className="testimonial-name">- Ram Hari Shah</p>
         </div>
 
-        <div class="testimonial-two">
-          <div class="testimonial-img-quote">
+        <div className="testimonial-two">
+          <div className="testimonial-img-quote">
             <img
               src={require("../../assets/photos/testimonials/two.jpg")}
               alt="client"
-              class="testimonial-img"
+              className="testimonial-img"
             />
             <blockquote>"Great Service"</blockquote>
           </div>
-          <p class="testimonial-text">
+          <p className="testimonial-text">
             "Lorem ipsum dolor sit amet consectetur <br />
             adipisicing elit. Quasi eius doloremque,
             <br /> eveniet tempore sint aliquid
             <br /> beatae distinctio iste voluptas nam."
           </p>
-          <p class="testimonial-name"> - Geeta Pandey</p>
+          <p className="testimonial-name"> - Geeta Pandey</p>
         </div>
 
-        <div class="testimonial-three">
-          <div class="testimonial-img-quote">
+        <div className="testimonial-three">
+          <div className="testimonial-img-quote">
             <img
               src={require("../../assets/photos/testimonials/four.jpg")}
               alt="client"
-              class="testimonial-img"
+              className="testimonial-img"
             />
             <blockquote>"Kind & Loving"</blockquote>
           </div>
-          <p class="testimonial-text">
+          <p className="testimonial-text">
             "Lorem ipsum dolor sit amet consectetur <br />
             adipisicing elit. Quasi eius doloremque,
             <br /> eveniet tempore sint aliquid
             <br /> beatae distinctio iste voluptas nam."
           </p>
-          <p class="testimonial-name"> - Bhattarai Couple</p>
+          <p className="testimonial-name"> - Bhattarai Couple</p>
         </div>
       </div>
     </section>

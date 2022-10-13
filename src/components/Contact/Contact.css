@@ -121,7 +121,6 @@ textarea:focus {
 }
 
 .last-icons {
-  color: white;
   margin-top: 9.6rem;
   font-size: 4.2rem;
   gap: 4.2rem;
@@ -130,4 +129,9 @@ textarea:focus {
   align-items: center;
   margin-bottom: 9.6rem;
   justify-content: center;
+}
+
+.logo:hover{
+  scale: 1.5;
+  color: white;
 }

@@ -5,16 +5,16 @@ import "./About.css";
 function About() {
   return (
     <section id="about" class="main-container2 ">
-      <div class="about-me container">
-        <figure class="about-me-imgs">
+      <div className="about-me container">
+        <figure className="about-me-imgs">
           <img
             src={require("../../assets/photos/pets-with-vet/about-img.jpg")}
             alt=""
-            class="about-me-img"
+            className="about-me-img"
           />
         </figure>
-        <div class="text">
-          <h1 class="primary-heading about-me-heading">About Me</h1>
+        <div className="text">
+          <h1 className="primary-heading about-me-heading">About Me</h1>
           <p>
             I am a student of Bachelor Level currently studying BSC CSIT in
             Patan Multiple Campus. I have been learning HTML and CSS since last
@@ -23,7 +23,7 @@ function About() {
             and hope i will succeed. After this month i will start learning
             Javascript. Thank you for visiting my demo online pet vet care!
           </p>
-          <a href="#" class="btn read-more">
+          <a href="#" className="btn read-more">
             Read More
           </a>
         </div>

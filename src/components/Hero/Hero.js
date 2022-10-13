@@ -4,20 +4,20 @@ import "./Hero.css";
 function Hero() {
   return (
     <main>
-      <section id="home" class="main-container1  ">
-        <div class="section-hero container">
-          <div class="hero-text-box">
-            <p class="hero-text">Himal</p>
-            <p class="hero-text">Pet</p>
-            <p class="hero-text">Care</p>
-            <p class="hero-call">House Call Veterinarian</p>
-            <a href="#" class="btn">
+      <section id="home" className="main-container1  ">
+        <div className="section-hero container">
+          <div className="hero-text-box">
+            <p className="hero-text">Himal</p>
+            <p className="hero-text">Pet</p>
+            <p className="hero-text">Care</p>
+            <p className="hero-call">House Call Veterinarian</p>
+            <a href="#" className="btn">
               Schedule a visit
             </a>
           </div>
-          <div class="img-box">
+          <div className="img-box">
             <img
-              class="dog-her0"
+              className="dog-her0"
               src={require("../../assets/photos/pets/one.jpg")}
               alt="dog-hero"
             />
