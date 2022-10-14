@@ -35,10 +35,13 @@ function Contact() {
         <div className="form">
           <form className="lst-form">
             <div className="input1">
-              <input type="text" placeholder="Name:" />
+              <input type="text" 
+              className="inputfield"
+              placeholder="Name:" />
             </div>
             <div className="input2">
               <input
+                className="inputfield"
                 type="email"
                 name="email"
                 id="email"

@@ -50,7 +50,7 @@
   row-gap: 0.8rem;
 }
 
-input:not(.last-button) {
+.inputfield {
   border: none;
   background-image: none;
   background-color: transparent;
@@ -64,12 +64,12 @@ input:not(.last-button) {
   margin-bottom: 2.4rem;
 }
 
-input:not(.last-button):focus {
+.inputfield:focus {
   border-bottom: 2px solid red;
   outline: none;
 }
 
-input:not(.last-button)::placeholder {
+.inputfield::placeholder {
   font-family: inherit;
   color: #eee;
 }
@@ -78,7 +78,7 @@ input:not(.last-button)::placeholder {
   grid-column: 1/-1;
 }
 
-textarea {
+#message {
   background-image: none;
   background-color: transparent;
   box-shadow: none;
@@ -91,7 +91,7 @@ textarea {
   width: 87rem;
 }
 
-textarea:focus {
+#message:focus {
   outline: none;
   border-bottom: 2px solid red;
 }
