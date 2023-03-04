@@ -1,3 +1,7 @@
+.clients {
+  padding: 6.4rem 4.8rem;
+}
+
 .client-imgs {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -30,4 +34,14 @@
 .love:hover {
   display: block;
   color: red;
+}
+
+@media only screen and (max-width: 768px) {
+  .clients {
+    padding: 0 2.4rem;
+  }
+  .client-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

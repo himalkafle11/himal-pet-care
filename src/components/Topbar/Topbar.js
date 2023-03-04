@@ -42,11 +42,6 @@ function Topbar() {
         {menuOpen && (
           <ul className="menu-button">
             <li>
-              <a onClick={toogleMenu} className="main-nav-link" href="#home">
-                Home
-              </a>
-            </li>
-            <li>
               <a onClick={toogleMenu} className="main-nav-link" href="#about">
                 About
               </a>

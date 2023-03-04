@@ -1,12 +1,11 @@
 import React from "react";
-import "../Container.css";
 import "./Testimonial.css";
 
 function Testimonial() {
   return (
-    <section className="main-container2">
+    <section className="main-container">
       <h1 className="primary-heading">What Pet Owners Say</h1>
-      <div className="testimonial container">
+      <div className="testimonial">
         <div className="testimonial-one">
           <div className="testimonial-img-quote">
             <img
@@ -14,13 +13,12 @@ function Testimonial() {
               alt="client"
               className="testimonial-img"
             />
-            <blockquote>"Very Professional"</blockquote>
+            <blockquote>Very Professional</blockquote>
           </div>
           <p className="testimonial-text">
-            "Lorem ipsum dolor sit amet consectetur <br />
-            adipisicing elit. Quasi eius doloremque,
-            <br /> eveniet tempore sint aliquid
-            <br /> beatae distinctio iste voluptas nam."
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eius
+            doloremque, eveniet tempore sint aliquid beatae distinctio iste
+            voluptas nam."
           </p>
           <p className="testimonial-name">- Ram Hari Shah</p>
         </div>
@@ -32,13 +30,12 @@ function Testimonial() {
               alt="client"
               className="testimonial-img"
             />
-            <blockquote>"Great Service"</blockquote>
+            <blockquote>Great Service</blockquote>
           </div>
           <p className="testimonial-text">
-            "Lorem ipsum dolor sit amet consectetur <br />
-            adipisicing elit. Quasi eius doloremque,
-            <br /> eveniet tempore sint aliquid
-            <br /> beatae distinctio iste voluptas nam."
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eius
+            doloremque, eveniet tempore sint aliquid beatae distinctio iste
+            voluptas nam."
           </p>
           <p className="testimonial-name"> - Geeta Pandey</p>
         </div>
@@ -50,13 +47,12 @@ function Testimonial() {
               alt="client"
               className="testimonial-img"
             />
-            <blockquote>"Kind & Loving"</blockquote>
+            <blockquote>Kind & Loving</blockquote>
           </div>
           <p className="testimonial-text">
-            "Lorem ipsum dolor sit amet consectetur <br />
-            adipisicing elit. Quasi eius doloremque,
-            <br /> eveniet tempore sint aliquid
-            <br /> beatae distinctio iste voluptas nam."
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eius
+            doloremque, eveniet tempore sint aliquid beatae distinctio iste
+            voluptas nam."
           </p>
           <p className="testimonial-name"> - Bhattarai Couple</p>
         </div>

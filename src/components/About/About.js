@@ -1,34 +1,37 @@
 import React from "react";
-import "../Container.css";
 import "./About.css";
 
 function About() {
   return (
-    <section id="about" class="main-container2 ">
-      <div className="about-me container">
-        <figure className="about-me-imgs">
-          <img
-            src={require("../../assets/photos/pets-with-vet/about-img.jpg")}
-            alt=""
-            className="about-me-img"
-          />
-        </figure>
-        <div className="text">
-          <h1 className="primary-heading about-me-heading">About Me</h1>
-          <p>
-            I am a student of Bachelor Level currently studying BSC CSIT in
-            Patan Multiple Campus. I have been learning HTML and CSS since last
-            month. This website is a practice website that i built. I am
-            aspiring to be a top front end web-developer and acting accordingly
-            and hope i will succeed. After this month i will start learning
-            Javascript. Thank you for visiting my demo online pet vet care!
-          </p>
-          <a href="#" className="btn read-more">
-            Read More
-          </a>
-        </div>
+    <section id="about" className="about-me">
+      <figure className="about-me-imgs">
+        <img
+          src={require("../../assets/photos/pets/two.png")}
+          alt=""
+          className="about-me-img"
+        />
+      </figure>
+      <div className="text">
+        <h1 className="about-me-heading">About Us</h1>
+        <p>
+          At our pet care service, we are dedicated to providing exceptional
+          care for your furry family members. We offer a wide range of services,
+          including veterinary care, dental care, check-ups, grooming, and much
+          more.
+          <br /> <br /> Our team of experienced professionals is passionate
+          about animals and committed to ensuring that your pets receive the
+          best possible care. When you bring your pet to our facility, you can
+          rest assured that they will be in good hands. Our veterinary services
+          include routine check-ups, vaccinations, preventative care, and more.
+          We also provide specialized care for pets with chronic conditions or
+          injuries.
+        </p>
+        <a href="#contact" className="btn read-more">
+          Learn More
+        </a>
       </div>
     </section>
+    // </section>
   );
 }
 

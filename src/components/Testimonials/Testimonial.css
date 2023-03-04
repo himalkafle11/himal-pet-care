@@ -1,3 +1,13 @@
+.main-container {
+  padding: 6.4rem 4.8rem;
+}
+
+.primary-heading {
+  align-items: center;
+  font-size: 4.8rem;
+  color: navy;
+}
+
 .testimonial {
   padding: 2.4rem;
   display: grid;
@@ -5,7 +15,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
-  gap: 2.4rem;
+  gap: 4.8rem;
   margin-bottom: 6.8rem;
 }
 
@@ -13,6 +23,7 @@
   display: flex;
   align-items: center;
   gap: 2.4rem;
+  margin-bottom: 2.4rem;
 }
 
 .testimonial-img {
@@ -29,12 +40,30 @@ blockquote {
 .testimonial-text {
   font-size: 1.8rem;
   line-height: 1.8;
-  margin: 2.6rem 0px 2.6rem 109px;
+  margin-bottom: 2.4rem;
 }
 
 .testimonial-name {
   color: navy;
   font-weight: 300;
   font-size: 2.4rem;
-  margin-left: 11.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial-one .testimonial-two .testimonial-three {
+    display: flex;
+    flex-direction: column;
+  }
+  .tetimonial-name {
+    align-self: center;
+  }
+  .testimonial-img-quote {
+    display: flex;
+    flex-direction: column;
+  }
 }

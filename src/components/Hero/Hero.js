@@ -23,7 +23,6 @@ function Hero() {
         </div>
         <div className="text-box">
           <p className="text">Himal Pet Care</p>
-          <p className="text">Call Veterninarian</p>
           <a href="#contact" className="btn">
             Schedule a visit
           </a>

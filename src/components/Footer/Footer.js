@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       <p>
-        <strong> &copy;</strong> 2022 by Himal Kafle. Created as a learning process.
+        <strong> &copy;</strong> 2023 by Himal Kafle. Created for Himal Pet Care
       </p>
     </footer>
   );
