@@ -1,11 +1,9 @@
 import React from "react";
 import "./Topbar.css";
 import ModalLog from "../Modal/ModalLog";
-// import {useNavigate} from 'react-router-dom';
 import { useState } from "react";
 
 function Topbar() {
-  // const navigate = useNavigate();
   const list = [
     { name: "Home", link: "home" },
     { name: "About", link: "about" },
@@ -17,13 +15,18 @@ function Topbar() {
   const [modalOpen, setModalOpen] = useState(false);
   const toggleModal = () => {
     setModalOpen(!modalOpen);
+  };
+
+  if (modalOpen) {
+    document.body.classList.add("active-modal");
+  } else {
+    document.body.classList.remove("active-modal");
   }
 
-  if(modalOpen) {
-    document.body.classList.add('active-modal')
-  } else {
-    document.body.classList.remove('active-modal')
-  }
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toogleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <header>
@@ -31,8 +34,58 @@ function Topbar() {
         <img
           src={require("../../assets/photos/pets/logo.webp")}
           alt="logo"
-          className="logo"
+          className="main-logo"
         />
+        <div className="menu" onClick={toogleMenu}>
+          <ion-icon name="grid-outline"></ion-icon>{" "}
+        </div>
+        {menuOpen && (
+          <ul className="menu-button">
+            <li>
+              <a onClick={toogleMenu} className="main-nav-link" href="#home">
+                Home
+              </a>
+            </li>
+            <li>
+              <a onClick={toogleMenu} className="main-nav-link" href="#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={toogleMenu}
+                className="main-nav-link"
+                href="#services"
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a onClick={toogleMenu} className="main-nav-link" href="#members">
+                Members
+              </a>
+            </li>
+            <li>
+              <a onClick={toogleMenu} className="main-nav-link" href="#contact">
+                Contacts
+              </a>
+            </li>
+
+            <a
+              onClick={toggleModal}
+              href="#"
+              className="main-nav-link  nav-profile "
+            >
+              <ion-icon
+                name="person-circle-outline"
+                className="nav-icon"
+              ></ion-icon>
+              Log In
+            </a>
+            {modalOpen && <ModalLog setOpenModal={setModalOpen} />}
+          </ul>
+        )}
+
         <ul className="main-nav-list">
           {list.map((item) => (
             <li>
@@ -41,12 +94,17 @@ function Topbar() {
               </a>
             </li>
           ))}
-          <button 
+          <a
             onClick={toggleModal}
-           href="#" className="main-nav-link  nav-profile ">
-            <ion-icon name="person-circle-outline" className="nav-icon"></ion-icon>
+            href="#"
+            className="main-nav-link  nav-profile "
+          >
+            <ion-icon
+              name="person-circle-outline"
+              className="nav-icon"
+            ></ion-icon>
             Log In
-          </button>
+          </a>
           {modalOpen && <ModalLog setOpenModal={setModalOpen} />}
         </ul>
       </nav>
