@@ -1,6 +1,6 @@
 import React from "react";
 import "./Topbar.css";
-import ModalLog from "../Modal/ModalLog";
+import ModalRegister from "../Modal/ModalRegister";
 import { useState } from "react";
 
 function Topbar() {
@@ -66,18 +66,17 @@ function Topbar() {
               </a>
             </li>
 
-            <a
+            <button
               onClick={toggleModal}
-              href="#"
               className="main-nav-link  nav-profile "
             >
               <ion-icon
                 name="person-circle-outline"
                 className="nav-icon"
               ></ion-icon>
-              Log In
-            </a>
-            {modalOpen && <ModalLog setOpenModal={setModalOpen} />}
+              Sign up
+            </button>
+            {modalOpen && <ModalRegister setOpenModal={setModalOpen} />}
           </ul>
         )}
 
@@ -89,18 +88,14 @@ function Topbar() {
               </a>
             </li>
           ))}
-          <a
-            onClick={toggleModal}
-            href="#"
-            className="main-nav-link  nav-profile "
-          >
+          <button onClick={toggleModal} className="btn ">
             <ion-icon
               name="person-circle-outline"
               className="nav-icon"
             ></ion-icon>
-            Log In
-          </a>
-          {modalOpen && <ModalLog setOpenModal={setModalOpen} />}
+            <span>Sign up</span>
+          </button>
+          {modalOpen && <ModalRegister setOpenModal={setModalOpen} />}
         </ul>
       </nav>
     </header>

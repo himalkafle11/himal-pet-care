@@ -33,13 +33,13 @@
 
 /* login form */
 
-.loginForm {
+.registerForm {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.inputFormLogIn {
+.inputForm {
   width: 100%;
   font-family: inherit;
   height: 42px;
@@ -50,11 +50,11 @@
   text-indent: 15px;
 }
 
-.inputFormLogIn:focus {
+.inputForm:focus {
   outline: none;
 }
 
-.buttonLogIn {
+.buttonSignup {
   height: 42px;
   background-color: #1f72e6;
   border-radius: 7px;
@@ -65,23 +65,8 @@
   font-weight: 500;
   cursor: pointer;
 }
-.buttonLogIn:hover {
+.buttonSignup:hover {
   background-color: rgba(0, 0, 128, 0.568);
-}
-
-.excess-btns {
-  display: flex;
-  flex-direction: column;
-}
-
-.forgot-btn {
-  background-color: white;
-  color: black;
-}
-
-.forgot-btn:hover {
-  background-color: white;
-  border: 2px solid red;
 }
 
 .return-btn {

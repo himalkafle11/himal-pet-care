@@ -20,7 +20,7 @@ function Contact() {
             <p className="main">Email</p>
             <div className="main-data">
               <ion-icon name="mail-outline"></ion-icon>
-              <p>mywebsite11@gamil.com</p>
+              <p>hmpetcare@gamil.com</p>
             </div>
           </div>
 

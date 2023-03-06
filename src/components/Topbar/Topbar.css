@@ -14,6 +14,7 @@ header {
   height: 6.2rem;
   border-radius: 50%;
   margin-left: 1.2rem;
+  cursor: pointer;
 }
 
 .main-nav {
@@ -27,7 +28,7 @@ header {
   justify-content: right;
   display: flex;
   align-items: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   gap: 1.6rem;
   list-style: none;
 }
@@ -62,14 +63,34 @@ header {
   color: red;
 }
 
-.main-nav-link.nav-profile:hover,
-.nav-profile:active {
-  background-color: rgba(116, 116, 236, 0.712);
-  color: #fff;
-}
-
 body.active-modal {
   overflow-y: hidden;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  gap: 0.4rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: navy;
+}
+.btn:link,
+.btn:visited {
+  padding: 0.8rem 3.2rem 0.8rem 3.2rem;
+  background-color: rgba(0, 0, 128, 0.671);
+  text-decoration: none;
+  line-height: 1.6;
+  transition: ease-in-out 0.4s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: rgba(116, 116, 236, 0.712);
+  color: #fff;
+  outline: 1px solid #fff;
 }
 
 /* making responsive */
